@@ -44,6 +44,10 @@ if (username) {
 userFormEl.addEventListener("submit", formSubmitHandler);
 
 var displayRepos = function(repos, searchTerm) {
+  if (issues.length === 0) {
+    issueContainerEl.textContent = "This repo has no open issues!";
+    return;
+  }
   if (repos.length === 0) {
     repoContainerEl.textContent = "No repositories found.";
   }

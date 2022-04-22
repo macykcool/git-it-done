@@ -17,7 +17,7 @@ var getRepoIssues = function(repo) {
     });
   };
   
-  getRepoIssues("facebook/react");
+  getRepoIssues("angular/angular");
 
 var displayIssues = function(issues) {
     if (issues.length === 0) {
